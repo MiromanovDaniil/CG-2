@@ -57,8 +57,18 @@ namespace CG_2
             this.reflection_OX = new System.Windows.Forms.Button();
             this.reflection_OY = new System.Windows.Forms.Button();
             this.reflection_y_eql_x = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.start_fugure_position = new System.Windows.Forms.Button();
+            this.WalkAnimation = new System.Windows.Forms.Button();
+            this.Draw_Human = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.vector_shift_Human = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Human_scaling = new System.Windows.Forms.Button();
+            this.rotation_Human_relatively_dot = new System.Windows.Forms.Button();
+            this.rotation_Human_relatively_center = new System.Windows.Forms.Button();
+            this.reflection_Human_OX = new System.Windows.Forms.Button();
+            this.reflection_Human_OY = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // zedGraph
@@ -73,14 +83,14 @@ namespace CG_2
             this.zedGraph.ScrollMinX = 0D;
             this.zedGraph.ScrollMinY = 0D;
             this.zedGraph.ScrollMinY2 = 0D;
-            this.zedGraph.Size = new System.Drawing.Size(703, 554);
+            this.zedGraph.Size = new System.Drawing.Size(715, 579);
             this.zedGraph.TabIndex = 0;
             // 
             // start_scale
             // 
-            this.start_scale.Location = new System.Drawing.Point(733, 527);
+            this.start_scale.Location = new System.Drawing.Point(877, 552);
             this.start_scale.Name = "start_scale";
-            this.start_scale.Size = new System.Drawing.Size(138, 56);
+            this.start_scale.Size = new System.Drawing.Size(130, 56);
             this.start_scale.TabIndex = 1;
             this.start_scale.Text = "Исходный масштаб";
             this.start_scale.UseVisualStyleBackColor = true;
@@ -88,7 +98,7 @@ namespace CG_2
             // 
             // vector_shift
             // 
-            this.vector_shift.Location = new System.Drawing.Point(733, 29);
+            this.vector_shift.Location = new System.Drawing.Point(733, 45);
             this.vector_shift.Name = "vector_shift";
             this.vector_shift.Size = new System.Drawing.Size(122, 58);
             this.vector_shift.TabIndex = 2;
@@ -98,14 +108,14 @@ namespace CG_2
             // 
             // P1_x
             // 
-            this.P1_x.Location = new System.Drawing.Point(937, 29);
+            this.P1_x.Location = new System.Drawing.Point(937, 45);
             this.P1_x.Name = "P1_x";
             this.P1_x.Size = new System.Drawing.Size(100, 20);
             this.P1_x.TabIndex = 3;
             // 
             // P1_y
             // 
-            this.P1_y.Location = new System.Drawing.Point(937, 67);
+            this.P1_y.Location = new System.Drawing.Point(937, 83);
             this.P1_y.Name = "P1_y";
             this.P1_y.Size = new System.Drawing.Size(100, 20);
             this.P1_y.TabIndex = 4;
@@ -113,7 +123,7 @@ namespace CG_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(905, 29);
+            this.label1.Location = new System.Drawing.Point(905, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 15);
             this.label1.TabIndex = 5;
@@ -122,7 +132,7 @@ namespace CG_2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(905, 70);
+            this.label2.Location = new System.Drawing.Point(905, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(25, 15);
             this.label2.TabIndex = 6;
@@ -274,7 +284,7 @@ namespace CG_2
             // 
             // reflection_OX
             // 
-            this.reflection_OX.Location = new System.Drawing.Point(733, 422);
+            this.reflection_OX.Location = new System.Drawing.Point(733, 401);
             this.reflection_OX.Name = "reflection_OX";
             this.reflection_OX.Size = new System.Drawing.Size(138, 64);
             this.reflection_OX.TabIndex = 29;
@@ -284,7 +294,7 @@ namespace CG_2
             // 
             // reflection_OY
             // 
-            this.reflection_OY.Location = new System.Drawing.Point(890, 422);
+            this.reflection_OY.Location = new System.Drawing.Point(877, 401);
             this.reflection_OY.Name = "reflection_OY";
             this.reflection_OY.Size = new System.Drawing.Size(139, 64);
             this.reflection_OY.TabIndex = 30;
@@ -294,7 +304,7 @@ namespace CG_2
             // 
             // reflection_y_eql_x
             // 
-            this.reflection_y_eql_x.Location = new System.Drawing.Point(1039, 422);
+            this.reflection_y_eql_x.Location = new System.Drawing.Point(801, 471);
             this.reflection_y_eql_x.Name = "reflection_y_eql_x";
             this.reflection_y_eql_x.Size = new System.Drawing.Size(136, 64);
             this.reflection_y_eql_x.TabIndex = 31;
@@ -302,18 +312,9 @@ namespace CG_2
             this.reflection_y_eql_x.UseVisualStyleBackColor = true;
             this.reflection_y_eql_x.Click += new System.EventHandler(this.reflection_y_eql_x_Click);
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(893, 527);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(138, 56);
-            this.button9.TabIndex = 32;
-            this.button9.Text = "Шагающий человечек";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // start_fugure_position
             // 
-            this.start_fugure_position.Location = new System.Drawing.Point(1051, 29);
+            this.start_fugure_position.Location = new System.Drawing.Point(733, 552);
             this.start_fugure_position.Name = "start_fugure_position";
             this.start_fugure_position.Size = new System.Drawing.Size(124, 56);
             this.start_fugure_position.TabIndex = 33;
@@ -321,13 +322,131 @@ namespace CG_2
             this.start_fugure_position.UseVisualStyleBackColor = true;
             this.start_fugure_position.Click += new System.EventHandler(this.start_fugure_position_Click);
             // 
+            // WalkAnimation
+            // 
+            this.WalkAnimation.Location = new System.Drawing.Point(1262, 128);
+            this.WalkAnimation.Name = "WalkAnimation";
+            this.WalkAnimation.Size = new System.Drawing.Size(136, 65);
+            this.WalkAnimation.TabIndex = 34;
+            this.WalkAnimation.Text = "Ходьба";
+            this.WalkAnimation.UseVisualStyleBackColor = true;
+            this.WalkAnimation.Click += new System.EventHandler(this.WalkAnimation_Click);
+            // 
+            // Draw_Human
+            // 
+            this.Draw_Human.Location = new System.Drawing.Point(1262, 45);
+            this.Draw_Human.Name = "Draw_Human";
+            this.Draw_Human.Size = new System.Drawing.Size(136, 56);
+            this.Draw_Human.TabIndex = 35;
+            this.Draw_Human.Text = "Начальное положение человечка";
+            this.Draw_Human.UseVisualStyleBackColor = true;
+            this.Draw_Human.Click += new System.EventHandler(this.Draw_Human_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(754, 27);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 15);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "Для фигуры";
+            // 
+            // vector_shift_Human
+            // 
+            this.vector_shift_Human.Location = new System.Drawing.Point(1085, 45);
+            this.vector_shift_Human.Name = "vector_shift_Human";
+            this.vector_shift_Human.Size = new System.Drawing.Size(122, 58);
+            this.vector_shift_Human.TabIndex = 37;
+            this.vector_shift_Human.Text = "Сдивг на вектор (x,y)";
+            this.vector_shift_Human.UseVisualStyleBackColor = true;
+            this.vector_shift_Human.Click += new System.EventHandler(this.vector_shift_Human_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1101, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 15);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "Для человечка";
+            // 
+            // Human_scaling
+            // 
+            this.Human_scaling.Location = new System.Drawing.Point(1085, 131);
+            this.Human_scaling.Name = "Human_scaling";
+            this.Human_scaling.Size = new System.Drawing.Size(138, 64);
+            this.Human_scaling.TabIndex = 39;
+            this.Human_scaling.Text = "Масштабирование \r\nпо осям\r\n";
+            this.Human_scaling.UseVisualStyleBackColor = true;
+            this.Human_scaling.Click += new System.EventHandler(this.Human_scaling_Click);
+            // 
+            // rotation_Human_relatively_dot
+            // 
+            this.rotation_Human_relatively_dot.Location = new System.Drawing.Point(1085, 224);
+            this.rotation_Human_relatively_dot.Name = "rotation_Human_relatively_dot";
+            this.rotation_Human_relatively_dot.Size = new System.Drawing.Size(138, 74);
+            this.rotation_Human_relatively_dot.TabIndex = 40;
+            this.rotation_Human_relatively_dot.Text = "Поворот на угол \r\nотносительно \r\nточки\r\n\r\n";
+            this.rotation_Human_relatively_dot.UseVisualStyleBackColor = true;
+            this.rotation_Human_relatively_dot.Click += new System.EventHandler(this.rotation_Human_relatively_dot_Click);
+            // 
+            // rotation_Human_relatively_center
+            // 
+            this.rotation_Human_relatively_center.Location = new System.Drawing.Point(1085, 322);
+            this.rotation_Human_relatively_center.Name = "rotation_Human_relatively_center";
+            this.rotation_Human_relatively_center.Size = new System.Drawing.Size(138, 64);
+            this.rotation_Human_relatively_center.TabIndex = 41;
+            this.rotation_Human_relatively_center.Text = "Поворот на угол \r\nотносительно \r\nцентра\r\n\r\n\r\n";
+            this.rotation_Human_relatively_center.UseVisualStyleBackColor = true;
+            this.rotation_Human_relatively_center.Click += new System.EventHandler(this.rotation_Human_relatively_center_Click);
+            // 
+            // reflection_Human_OX
+            // 
+            this.reflection_Human_OX.Location = new System.Drawing.Point(1085, 401);
+            this.reflection_Human_OX.Name = "reflection_Human_OX";
+            this.reflection_Human_OX.Size = new System.Drawing.Size(138, 64);
+            this.reflection_Human_OX.TabIndex = 42;
+            this.reflection_Human_OX.Text = "Отражение \r\nотносительно \r\nOX\r\n\r\n\r\n\r\n";
+            this.reflection_Human_OX.UseVisualStyleBackColor = true;
+            this.reflection_Human_OX.Click += new System.EventHandler(this.reflection_Human_OX_Click);
+            // 
+            // reflection_Human_OY
+            // 
+            this.reflection_Human_OY.Location = new System.Drawing.Point(1229, 401);
+            this.reflection_Human_OY.Name = "reflection_Human_OY";
+            this.reflection_Human_OY.Size = new System.Drawing.Size(139, 64);
+            this.reflection_Human_OY.TabIndex = 43;
+            this.reflection_Human_OY.Text = "Отражение \r\nотносительно \r\nOY\r\n\r\n\r\n\r\n";
+            this.reflection_Human_OY.UseVisualStyleBackColor = true;
+            this.reflection_Human_OY.Click += new System.EventHandler(this.reflection_Human_OY_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1163, 471);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(136, 64);
+            this.button6.TabIndex = 44;
+            this.button6.Text = "Отражение относительно \r\nпрямой Y=X";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.reflection_Human_y_eql_x_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 655);
+            this.ClientSize = new System.Drawing.Size(1445, 642);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.reflection_Human_OY);
+            this.Controls.Add(this.reflection_Human_OX);
+            this.Controls.Add(this.rotation_Human_relatively_center);
+            this.Controls.Add(this.rotation_Human_relatively_dot);
+            this.Controls.Add(this.Human_scaling);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.vector_shift_Human);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.Draw_Human);
+            this.Controls.Add(this.WalkAnimation);
             this.Controls.Add(this.start_fugure_position);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.reflection_y_eql_x);
             this.Controls.Add(this.reflection_OY);
             this.Controls.Add(this.reflection_OX);
@@ -391,8 +510,18 @@ namespace CG_2
         private System.Windows.Forms.Button reflection_OX;
         private System.Windows.Forms.Button reflection_OY;
         private System.Windows.Forms.Button reflection_y_eql_x;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button start_fugure_position;
+        private System.Windows.Forms.Button WalkAnimation;
+        private System.Windows.Forms.Button Draw_Human;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button vector_shift_Human;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button Human_scaling;
+        private System.Windows.Forms.Button rotation_Human_relatively_dot;
+        private System.Windows.Forms.Button rotation_Human_relatively_center;
+        private System.Windows.Forms.Button reflection_Human_OX;
+        private System.Windows.Forms.Button reflection_Human_OY;
+        private System.Windows.Forms.Button button6;
     }
 }
 
